@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavan Identity</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="ui-container" class="hidden">
+        <div class="identity-box">
+            <div class="header">
+                <h2>LAVAN COMMUNITY</h2>
+                <p>CONFIRM YOUR IDENTITY</p>
+            </div>
+
+            <div class="profile-section">
+                <img id="avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Discord Avatar">
+                <h3 id="discord-name">Loading...</h3>
+                <span class="status-badge">WHITELIST APPROVED</span>
+            </div>
+
+            <form id="identity-form">
+                <div class="input-group row">
+                    <div class="input-box">
+                        <label>First Name (ชื่อ)</label>
+                        <input type="text" id="firstname" readonly>
+                    </div>
+                    <div class="input-box">
+                        <label>Last Name (นามสกุล)</label>
+                        <input type="text" id="lastname" readonly>
+                    </div>
+                </div>
+
+                <div class="input-group row">
+                    <div class="input-box">
+                        <label>Date of Birth (วันเกิด)</label>
+                        <input type="text" id="dob" readonly>
+                    </div>
+                    <div class="input-box">
+                        <label>Height (ส่วนสูง)</label>
+                        <input type="text" id="height" readonly>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Gender (เพศ)</label>
+                    <input type="text" id="gender-display" readonly>
+                    <input type="hidden" id="gender">
+                </div>
+
+                <button type="submit" id="submit-btn">✅ ยืนยันเข้าสู่เมือง</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
